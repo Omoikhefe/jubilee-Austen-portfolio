@@ -1,0 +1,185 @@
+/**** BASE STYLES ****/
+
+
+body{
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #2b2b2b; /*text color*/
+}
+
+/****** GRID ******/
+
+.full-width{
+    width: 1200px;
+    margin: 0 auto; /*margin: 0 is for top-bottom, auto is for left-right: if you want to put any element at center position*/
+    overflow: auto;
+}
+
+.half-width{
+    width: 600px;
+    float:left;
+}
+
+.third-width{
+    width: 400px;
+    float: left;
+}
+
+/***** HEADER ****/ 
+
+header {
+    height: 800px;
+    background: url('../img/hero.png');/*see notes*/
+    background-size:cover;
+    background-position:center;
+}
+
+header h1 {
+    padding: 65px 0 65px 25px; /*top right bottom left */
+    font-family:'Lora', serif;
+    color: #bbc085;
+}
+
+nav {
+    float: right;
+    padding: 75px 25px; /*top bottom, left right */
+}
+nav ul li{
+        display: inline-block; /* puts icons beside eachother amd takes out the bullet points*/
+}
+
+nav ul li a {
+    text-transform:uppercase;
+    text-decoration: none;
+    font-size: 18px;
+    color: #828282;
+    padding-left: 80px; 
+}
+
+header h2 {
+    width: 1000px;
+    clear: both;
+    font-family:'Lora', serif;
+    font-size:  72px;
+    line-height:80px;
+    color: #9b9b9b;
+    padding: 20px 0 20px 25px;
+}
+
+header h2 span {
+    color: #2b2b2b;
+}
+/***** ABOUT ****/
+
+#About .full-width{ /* combinatiom: having an ID selector and a class selector on the same line with no commas or anything in betwen*/
+    padding: 80px 0; /*for the full-width class for the #about section, give it 80px of padding on the top and bottom, and no padding on either side.*/
+}
+
+#About h2{
+    font-family: 'Lora', serif;
+    font-size: 36px;
+    padding-left: 50px; /* will push the about header to the left by 50px */
+}
+
+#About p {
+    font-size: 21px; 
+    color: #7f7f7f; 
+    line-height: 40px; /*spacing between each line*/
+    padding-left: 50px;/* will push the about paragraph to the left by 50px */
+    padding-right: 50px;/* will push the about paragraph to the right by 50px */
+}
+
+
+/***** WORK ****/
+
+#Work {
+    background: #F9CEB7;
+    text-align: center;
+}
+
+#Work .full-width{
+    padding: 115px 0;  /*115 padding for the top applies to the bottom and 0 is for left & right*/
+}
+
+#Work img {
+    padding-bottom: 30px;
+}
+
+#Work h3 {
+    font-size: 21px;
+    line-height: 32px;
+    width: 190px; /* the larger the number, the wider width */
+    margin: 0 auto;
+}
+
+#Work p {
+    font-family: 'Lora', serif;
+    font-size: 18px;
+    line-height:30px;
+    padding: 0 50px; /* 0 is for top-bottom & 50 is for left-right */
+}
+
+
+
+/***** CONTACT ****/
+
+#Contact {
+    background: #EBEBEB;
+}
+
+#Contact .full-width{
+    padding: 110px 0;
+}
+
+#Contact img#contact-img {  /* img doesnt have to be next to it does it ?*/
+    margin-left:  25px;
+    border: 12px solid #ffffff;
+
+}
+
+#Contact h2, #Contact #email-header, #Contact #socialmedia-header, #Contact ul {
+    padding-left: 115px; /*pushes all icons to the left in the opposite diection (right)*/
+}
+
+#Contact #envelope {
+    padding: 0 10px 0 115px ; /*115px is the left*/
+}
+
+#Contact h2 {
+    font-family:'Lora', serif;
+    font-size: 36px;
+    line-height: 44px;
+}
+
+#Contact #email-header{
+    font-size: 32px;
+    font-weight: lighter;
+    line-height: 44px;
+    margin: -30px 0 5px 0;
+}
+
+#Contact #socialmedia-header{
+    font-size: 29px;
+    font-weight:bold;
+    line-height:44px;
+    margin: 40px 0 0 0;
+}
+
+#Contact a {
+    color: #c49075;
+    font-weight:bold;
+    font-size:28px;
+    text-decoration: none;
+}
+
+#Contact ul{
+    list-style: none; 
+}
+
+#Contact ul li {
+    display: inline-block; /* puts icons beside eachother and takes out the bullet points*/ 
+}
+
+#Contact ul img{
+    font-size: 32px;
+    padding-right: 48px; 
+}
